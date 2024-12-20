@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ff6b6b;
+  --secondary: #4ecdc4;
+  --accent: #feca57;
+  --background: #f7f7f7;
+  --text: #333333;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.parallax-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-layer-back {
+  transform: translateZ(-1px) scale(1.5);
+}
+
+.parallax-layer-base {
+  transform: translateZ(0);
+}
+
